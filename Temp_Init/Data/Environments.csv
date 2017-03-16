@@ -1,0 +1,4 @@
+Environment,Url,UserName,Password,FirstName,LastName,Address,City,AccountNumber
+Develop1,https://www.google.com/,John.Smith@test.com,Pass123,John,Smith,Test Street 12,Testville,111222
+Develop2,http://test.develop.com/,John.Smith2@test.com,Pass456,John,Smith,Test Street 12,Testville,333444
+Staging,http://test.staging.com/,John.Smith3@test.com,Pass789,John,Smith,Test Street 12,Testville,555666
