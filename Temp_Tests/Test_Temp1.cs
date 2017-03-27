@@ -111,6 +111,7 @@ namespace Gradwell_Tests_Login.CustomerLogin
             webPage1.VerifyTextField("Google");
             //Testing git
             //Testing git2
+            //Testing git3
         }
 
         [TearDown]
