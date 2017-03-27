@@ -4,7 +4,7 @@ using Temp_Init.Base;
 
 namespace Gradwell_Tests_Login.CustomerLogin
 {
-    //[TestFixture("FireFox", "type1", "Develop1")]
+    [TestFixture("FireFox", "type1", "Develop1")]
     //[TestFixture("FireFox", "type1", "Develop2")]
     [TestFixture("Chrome", "type2", "Develop1")]
     //[TestFixture("Chrome", "type1", "Develop2")]
@@ -109,6 +109,7 @@ namespace Gradwell_Tests_Login.CustomerLogin
         public void VerifyPage()
         {
             webPage1.VerifyTextField("Google");
+            //Testing git
         }
 
         [TearDown]
