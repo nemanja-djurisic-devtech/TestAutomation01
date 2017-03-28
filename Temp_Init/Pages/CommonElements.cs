@@ -17,64 +17,7 @@ namespace Temp_Init.Pages
 
         //---------- E L E M E N T S ----------//
 
-        //Save button
-        [FindsBy(How = How.Id, Using = "Save")]
-        public IWebElement SaveBtn { get; set; }
-
-        //Save button
-        [FindsBy(How = How.ClassName, Using = "user-name")]
-        public IWebElement UserName { get; set; }
-
-        //Save button
-        [FindsBy(How = How.Id, Using = "password")]
-        public IWebElement Password { get; set; }
-
-        //Login button - MULTIPLE LOCATORS
-        [FindsBy(How = How.XPath, Using = "//label[@for='login' and div[@class='on']]")]
-        public IWebElement LoginBtn { get; set; }
-
-        //Page header
-        [FindsBy(How = How.CssSelector, Using = ".header.login-panel")]
-        public IWebElement Header { get; set; }
-
-
         //---------- A C T I O N S ----------//
-
-        //Login to Web Page
-        public void LoginAsCustomer(string userName, string password)
-        {
-            UserName.Clear();
-            UserName.SendKeys(userName);
-            Password.Clear();
-            Password.SendKeys(password);
-            LoginBtn.Click();
-        }
-
-        //Verify Loged Customer
-        public void VerifyHeader(string text)
-        {
-            Assert.IsTrue(Header.Text.Contains(text), "Customer is NOT logged in");
-        }
-
-        //Compare two values
-        public void CompareValues(string value1, string value2)
-        {
-            Assert.IsTrue(value1.Equals(value2));
-            Console.WriteLine(value1);
-            Console.WriteLine(value2);
-        }
-
-        public void ClearUrl()
-        {
-            Driver.Url.Remove(1, 30);
-        }
-
-        //Confirm Pop-up
-        public void AcceptDialog()
-        {
-            IAlert alert = Driver.SwitchTo().Alert();
-            alert.Accept();
-        }
 
         //Verify if correct page URL is displayed
         public void VerifyPageUrl(string page)
