@@ -2,17 +2,17 @@
 using NUnit.Framework;
 using Temp_Init.Base;
 
-namespace Gradwell_Tests_Login.CustomerLogin
+namespace Temp_Tests
 {
     [TestFixture("FireFox", "Develop1")]
     [TestFixture("Chrome", "Develop1")]
 
-    public class Test_Login : Initialization
+    public class Test_Temp1 : Initialization
     {
         private string browser;
         private string env;
 
-        public Test_Login(string browser, string env)
+        public Test_Temp1(string browser, string env)
         {
             this.browser = browser;
             this.env = env;
