@@ -23,7 +23,7 @@ namespace Temp_Init.Data
 
         public void GetEnvironmentData()
         {
-            StreamReader streamReader = new StreamReader(@"Temp_Init\\Data\\Environments.csv");
+            StreamReader streamReader = new StreamReader(@"Data\\Environments.csv");
 
             while (streamReader.Peek() >= 0)
             {
