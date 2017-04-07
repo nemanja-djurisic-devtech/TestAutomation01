@@ -122,8 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Initialization.cs" />
-    <Compile Include="Data\CsvData.cs" />
-    <Compile Include="Data\DataBase.cs" />
+    <Compile Include="Data\CsvData.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Data\DataBase.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Pages\CommonElements.cs" />
     <Compile Include="Pages\WebPage1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
