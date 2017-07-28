@@ -63,7 +63,7 @@ namespace Temp_Init.Base
             switch (browserName)
             {
                 case "Chrome":
-                    Driver = new ChromeDriver(@"D:\Gradwell\Automated Testing\Gradwell_Automation\packages", chromeOptions);
+                    Driver = new ChromeDriver(chromeOptions);
                     Driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(30));
                     Driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromMinutes(30));
                     Driver.Manage().Timeouts().SetScriptTimeout(TimeSpan.FromSeconds(30));
